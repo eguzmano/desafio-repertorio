@@ -25,6 +25,17 @@ app.get("/", (req, res) => {
     res.sendFile(filePath);
 });
 
+// GET
+app.get("/canciones", async (req, res) => {
+    try {
+        const canciones = await getCanciones();
+        res.json(canciones);
+    } catch (error) {
+        console.error("Error al obtener canciones:", error);
+        res.status(500).json({ message: "Error interno del servidor" });
+    }
+});
+
 // POST
 app.post("/canciones", async (req, res) => {
     try {
@@ -41,7 +52,7 @@ app.post("/canciones", async (req, res) => {
         const canciones = await getCanciones();
         canciones.push(newCancion);
 
-        await writeFile("./repertorio.json", JSON.stringify(canciones, null, 2));
+        await writeFile("./repertorio.json", JSON.stringify(canciones));
         res.status(201).json({ message: "Canción creada con éxito" });
 
     } catch (error) {
@@ -51,16 +62,6 @@ app.post("/canciones", async (req, res) => {
 });
 
 
-// GET
-app.get("/canciones", async (req, res) => {
-    try {
-        const canciones = await getCanciones();
-        res.json(canciones);
-    } catch (error) {
-        console.error("Error al obtener canciones:", error);
-        res.status(500).json({ message: "Error interno del servidor" });
-    }
-});
 
 // PUT
 app.put("/canciones/:id", async (req, res) => {
@@ -82,7 +83,7 @@ app.put("/canciones/:id", async (req, res) => {
             ...(tono && { tono })
         };
 
-        await writeFile("./repertorio.json", JSON.stringify(canciones, null, 2));
+        await writeFile("./repertorio.json", JSON.stringify(canciones));
         res.json({ message: "Canción actualizada correctamente", cancion: canciones[index] });
 
     } catch (error) {
@@ -103,7 +104,7 @@ app.delete("/canciones/:id", async (req, res) => {
         }
 
         canciones.splice(index, 1);
-        await writeFile("./repertorio.json", JSON.stringify(canciones, null, 2));
+        await writeFile("./repertorio.json", JSON.stringify(canciones));
         res.json({ message: "Canción eliminada correctamente" });
 
     } catch (error) {
