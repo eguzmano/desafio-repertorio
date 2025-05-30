@@ -138,9 +138,7 @@
     cancion.value = canciones[i].titulo;
     artista.value = canciones[i].artista;
     tono.value = canciones[i].tono;
-    document
-      .getElementById("editar")
-      .setAttribute("onclick", `editarCancion('${id}')`);
+    document.getElementById("editar").onclick = () => editarCancion(id);
     document.getElementById("agregar").style.display = "none";
     document.getElementById("editar").style.display = "block";
   }

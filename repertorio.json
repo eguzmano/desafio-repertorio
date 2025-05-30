@@ -1,1 +1,42 @@
-[{"id":1,"titulo":"La Flaca","artista":"Jarabe de Palo","tono":"Am","editar":true,"eliminar":true},{"id":2,"titulo":"Persiana Americana","artista":"Soda Stereo","tono":"Bm","editar":true,"eliminar":true},{"id":3,"titulo":"Yellow","artista":"Coldplay","tono":"C","editar":true,"eliminar":true},{"id":4,"titulo":"Creep","artista":"Radiohead","tono":"G","editar":true,"eliminar":false},{"id":5,"titulo":"Zombie","artista":"The Cranberries","tono":"Em","editar":false,"eliminar":false},{"id":"dHnE9hjyepxIBkV9niunz","titulo":"La Flaca2","artista":"Jarabe de Palo2","tono":"Am1","editar":true,"eliminar":true},{"id":"drsM5rj2yPmF9RJlLD-Uy","titulo":"La Flaca2","artista":"prueba 1","tono":"AM","editar":true,"eliminar":true},{"id":"-M8svrFNGF4fRa49VNUt-","titulo":"Fade to black","artista":"Metallica","tono":"Metal","editar":true,"eliminar":true}]
+[
+  {
+    "id": 1,
+    "titulo": "La Flaca",
+    "artista": "Jarabe de Palo",
+    "tono": "Am",
+    "editar": true,
+    "eliminar": true
+  },
+  {
+    "id": 2,
+    "titulo": "Persiana Americana",
+    "artista": "Soda Stereo",
+    "tono": "Bm",
+    "editar": true,
+    "eliminar": true
+  },
+  {
+    "id": 3,
+    "titulo": "Yellow",
+    "artista": "Coldplay",
+    "tono": "C",
+    "editar": true,
+    "eliminar": true
+  },
+  {
+    "id": 4,
+    "titulo": "Creep",
+    "artista": "Radiohead",
+    "tono": "G",
+    "editar": true,
+    "eliminar": false
+  },
+  {
+    "id": 5,
+    "titulo": "Zombie",
+    "artista": "The Cranberries",
+    "tono": "Em",
+    "editar": false,
+    "eliminar": false
+  }
+]
