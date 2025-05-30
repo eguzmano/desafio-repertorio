@@ -69,7 +69,7 @@ app.put("/canciones/:id", async (req, res) => {
         const { titulo, artista, tono } = req.body;
 
         const canciones = await getCanciones();
-        const index = canciones.findIndex(c => c.id === id);
+        const index = canciones.findIndex(c => String(c.id) === String(id));
 
         if (index === -1) {
             return res.status(404).json({ message: "Canción no encontrada" });

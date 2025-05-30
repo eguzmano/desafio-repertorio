@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "titulo": "Creep",
+    "titulo": "Creep2",
     "artista": "Radiohead",
     "tono": "G",
     "editar": true,
@@ -42,8 +42,8 @@
   {
     "id": "7N91mRSRkI7kRDwdfp9dk",
     "titulo": "q",
-    "artista": "q",
-    "tono": "q",
+    "artista": "r",
+    "tono": "t",
     "editar": true,
     "eliminar": true
   }
