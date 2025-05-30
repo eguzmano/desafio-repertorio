@@ -38,5 +38,13 @@
     "tono": "Em",
     "editar": false,
     "eliminar": false
+  },
+  {
+    "id": "7N91mRSRkI7kRDwdfp9dk",
+    "titulo": "q",
+    "artista": "q",
+    "tono": "q",
+    "editar": true,
+    "eliminar": true
   }
 ]
